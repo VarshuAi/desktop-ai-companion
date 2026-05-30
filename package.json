@@ -1,0 +1,16 @@
+{
+  "name": "desktop-ai-companion",
+  "version": "1.0.0",
+  "description": "Floating Voice-Activated AI Desktop Assistant Pet",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.11.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "electron": "^30.0.6"
+  }
+}

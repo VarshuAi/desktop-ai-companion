@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pico - Desktop AI Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hidden standard system window control bridge -->
+  <div class="window-controls">
+    <div class="drag-handle" id="drag-handle">PICO COMPANION</div>
+    <div class="controls-btns">
+      <button class="win-btn" id="btn-min">−</button>
+      <button class="win-btn" id="btn-close">×</button>
+    </div>
+  </div>
+
+  <!-- MAIN INTERACTIVE DESKTOP AVATAR CONTAINER -->
+  <div class="avatar-container" id="avatar-container">
+    
+    <!-- Pulse glowing brain circle behind pet -->
+    <div class="pet-glow-back" id="pet-glow-back"></div>
+
+    <!-- SPEECH BUBBLE OUT-LOUD DIALOGUE -->
+    <div class="speech-bubble" id="speech-bubble">
+      <div class="speech-text" id="speech-text">Hello Varshan! Ready to crush some tasks today? 🚀</div>
+      <div class="transcribing-indicator" id="transcribing-indicator">Listening...</div>
+    </div>
+
+    <!-- DETAILED PIXEL PET AVATAR -->
+    <div class="pixel-pet idle" id="pixel-pet">
+      <!-- Coder Cap (hidden by default, shown in coding state) -->
+      <div class="accessory coder-cap"></div>
+      
+      <!-- Study Glasses (hidden by default, shown in study state) -->
+      <div class="accessory study-glasses"></div>
+
+      <!-- Holographic Laptop/Spellbook -->
+      <div class="hologram-item" id="hologram-item"></div>
+
+      <!-- Core Face Elements -->
+      <div class="pet-face">
+        <div class="eyes">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+        </div>
+        <div class="blush"></div>
+        <div class="mouth"></div>
+      </div>
+    </div>
+
+    <!-- COUNTDOWN STUDY POMODORO TIMER WIDGET -->
+    <div class="timer-overlay" id="timer-overlay">
+      <span class="timer-clock" id="timer-clock">25:00</span>
+    </div>
+
+  </div>
+
+  <!-- FLOATING GLASSMORPHIC AI ASSISTANT PORTAL -->
+  <div class="assistant-panel" id="assistant-panel">
+    
+    <!-- Tab system / Stats section (Tamagotchi Care UI) -->
+    <div class="care-stats">
+      <div class="stat-bar">
+        <label>⚡ ENERGY</label>
+        <div class="bar-outer"><div class="bar-inner energy" id="stat-energy" style="width: 85%;"></div></div>
+      </div>
+      <div class="stat-bar">
+        <label>💖 AFFECTION</label>
+        <div class="bar-outer"><div class="bar-inner affection" id="stat-affection" style="width: 70%;"></div></div>
+      </div>
+      <div class="stat-bar">
+        <label>🎓 INTELLECT</label>
+        <div class="bar-outer"><div class="bar-inner intellect" id="stat-intellect" style="width: 45%;"></div></div>
+      </div>
+    </div>
+
+    <!-- Active System Task Status Indicator -->
+    <div class="task-status" id="task-status">
+      <span class="pulse-dot"></span>
+      <span class="status-msg" id="status-msg">Watching: Desktop</span>
+    </div>
+
+    <!-- CHAT INPUT & VOICE CAPTURE SECTION -->
+    <div class="chat-controls">
+      <!-- Glowing Microphone Voice Trigger -->
+      <button class="btn-voice" id="btn-voice" title="Talk to Pico">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+        </svg>
+      </button>
+
+      <!-- Text input bar -->
+      <input type="text" class="chat-input" id="chat-input" placeholder="Type a task or chat...">
+      
+      <!-- Send Button -->
+      <button class="btn-send" id="btn-send">➔</button>
+    </div>
+
+    <!-- Voice Synth Pitch & Volume Config -->
+    <div class="voice-settings">
+      <label>Voice Voice: </label>
+      <select id="voice-select"></select>
+    </div>
+
+  </div>
+
+  <!-- IPC RENDERER SCRIPT BRIDGE -->
+  <script src="renderer.js"></script>
+</body>
+</html>

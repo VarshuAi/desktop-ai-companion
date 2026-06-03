@@ -1,10 +1,61 @@
-# Pico: Floating Voice-Activated AI Desktop Assistant & Care Pet 🚀
+<!-- ========================================================================= -->
+<!--                        DESKTOP-AI-COMPANION — README                            -->
+<!--       Cyberpunk Premium Theme  |  Animated SVGs  |  Live Badges          -->
+<!-- ========================================================================= -->
 
-Pico is an ultra-premium, interactive, floating **always-on-top desktop assistant and care pet** that lives right on your Windows taskbar! Powered by **Gemini 3.5**, Pico speaks out loud, listens to your voice commands, monitors your active screen window to keep you focused, and automates native system tasks (launching VS Code, opening study portals, syncing repositories, or playing study music) based on your verbal instructions.
+<div align="center">
 
----
+<!-- ============================== BANNER ============================== -->
 
-## 💎 Premium Features
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,25:001A0D,50:002A15,75:001A0D,100:000000&height=180&section=header&text=desktop-ai-companion&fontSize=48&fontColor=00FF88&fontAlignY=38&animation=fadeIn" width="100%"/>
+
+<!-- ============================== TYPING SVG ============================== -->
+
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Source%20Code%20Pro&weight=500&size=22&duration=3500&pause=800&color=00FF88&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=700&height=80&lines=%3E%20Welcome%20to%20desktop-ai-companion%20%F0%9F%9A%80;%3E%20Built%20using%20JavaScript%20%7C%20Optimized%20%26%20Secure;%3E%20Cyberpunk%20Premium%20Theme%20Applied.)](https://github.com/VarshuAi/desktop-ai-companion)
+
+<br/>
+
+![Version](https://img.shields.io/badge/Version-1.0-00FF88?style=for-the-badge&logo=github&logoColor=black)
+![Language](https://img.shields.io/badge/JavaScript-Tech-00CC66?style=for-the-badge&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Active-14354C?style=for-the-badge&logo=git&logoColor=white)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,25:001A0D,50:002A15,75:001A0D,100:000000&height=60&section=header&text=&fontSize=0" width="100%"/>
+
+</div>
+
+<!-- ============================== ABOUT ============================== -->
+
+<h2>
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+<samp>&nbsp;ABOUT</samp>
+</h2>
+
+```yaml
+name: desktop-ai-companion
+version: 1.0
+type: Repository
+author: VarshuAi
+description: >
+  No description available for this project.
+primary_tech: JavaScript
+```
+
+<!-- ============================== CENTRAL GRAPHIC ============================== -->
+
+<div align="center">
+<br>
+[![Repo Stats](https://github-readme-stats.vercel.app/api/pin/?username=VarshuAi&repo=desktop-ai-companion&theme=dark&bg_color=000000&title_color=00FF88&icon_color=00FF88&text_color=00CC66)](https://github.com/VarshuAi/desktop-ai-companion)
+<br>
+</div>
+
+<!-- ============================== FEATURES ============================== -->
+
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28">
+<samp>&nbsp;FEATURES</samp>
+</h2>
 
 ### 🎙️ 1. High-Fidelity Voice Synthesis & Speech Recognition (TTS / STT)
 * **Out-Loud Synthesis (TTS)**: Built using the Chromium `speechSynthesis` engine, synced to high-quality English speech packages. Features a cute, high-pitched adjustments (`1.15x`) to give Pico an energetic, cute, and responsive companion voice.
@@ -31,33 +82,40 @@ Pico is an ultra-premium, interactive, floating **always-on-top desktop assistan
 
 ---
 
-## 🛠️ System Architecture
+<!-- ============================== COMMANDS ============================== -->
 
-Pico is engineered purely on lightweight native web standards to avoid bulky, heavy, or unreliable compiled Node modules.
+<h2>
+<img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28">
+<samp>&nbsp;COMMANDS & USAGE</samp>
+</h2>
 
-```mermaid
-sequenceDiagram
-    participant User as Varshan (Voice/Mic)
-    participant UI as Transparent Electron UI
-    participant Main as Electron Main Process (Node.js)
-    participant Gemini as Gemini 3.5 (AI Brain)
-    participant OS as Windows OS (Shell/Apps)
-
-    User->>UI: Click Mic & Speak: "Sync my repository"
-    UI->>UI: webkitSpeechRecognition transcribes voice
-    UI->>Main: Send text command: "Sync my repository"
-    Main->>Gemini: Request action intent + active screen context
-    Gemini-->>Main: Return JSON: { action: "git_sync", speech: "On it, Varshan!", animation: "coding" }
-    Main->>OS: Run command: cd magical-hypatia && git add/commit/push
-    OS-->>Main: Command Success
-    Main-->>UI: Deliver response & transition state
-    UI->>UI: Transition pet to coding cap style
-    UI->>User: speechSynthesis speaks: "Sync complete! Code pushed safely to GitHub!"
+```bash
+# Clone the repository structure
+git clone https://github.com/VarshuAi/desktop-ai-companion.git
+cd desktop-ai-companion
 ```
 
----
+<!-- ============================== TECH STACK ============================== -->
 
-## 🚀 Setup & Installation
+<h2>
+<img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28">
+<samp>&nbsp;TECH STACK</samp>
+</h2>
+
+<div align="center">
+
+#### `>> SYSTEM INVENTORY`
+![JavaScript](https://img.shields.io/badge/JavaScript-Primary_Language-00FF88?style=for-the-badge&logoColor=black)
+![Git](https://img.shields.io/badge/Git-VCS-00CC66?style=for-the-badge&logo=git&logoColor=white)
+
+</div>
+
+<!-- ============================== SETUP ============================== -->
+
+<h2>
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28">
+<samp>&nbsp;SETUP</samp>
+</h2>
 
 ### 1. Prerequisites
 Ensure you have [Node.js](https://nodejs.org/) installed on your Windows system.
@@ -87,10 +145,37 @@ npm start
 
 ---
 
-## 🎮 How to Interact with Pico
+<!-- ============================== STRUCTURE ============================== -->
 
-* **Pet Pico**: Click on his body to trigger a happy jump animation, hear him giggle out loud, and boost his Affection stat!
-* **Toggle Dashboard**: Double-click on the pet container to slide the sidebar in or out.
-* **Reposition**: Drag Pico anywhere on your monitors and release to watch him fall smoothly back down to the taskbar.
-* **Study Time**: Click the mic and speak: *"Hey Pico, start a 20 minute study block and open LeetCode"* or *"Launch VS Code and play study music"*.
-* **Sync Repositories**: Speak: *"Sync my code"* to let Pico automatically commit and push your active work!
+<h2>
+<samp>&nbsp;📁 STRUCTURE</samp>
+</h2>
+
+```
+desktop-ai-companion/
+├── src/             # Source code entrypoints
+├── docs/            # Project documentation files
+├── README.md        # Interactive readme sheet
+└── LICENSE          # Permission details
+```
+
+<!-- ============================== FOOTER ============================== -->
+
+<div align="center">
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,25:001A0D,50:002A15,75:001A0D,100:000000&height=80&section=footer&text=&fontSize=0" width="100%"/>
+
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Source%20Code%20Pro&size=14&duration=4000&pause=1000&color=00FF88&center=true&vCenter=true&width=500&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+VarshuAi;Build+Fast.+Ship+Secure.+Scale+Infinite.)](https://github.com/VarshuAi)
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/VarshuAi-Profile-00FF88?style=for-the-badge&logo=github&logoColor=black)](https://github.com/VarshuAi)
+[![Repo](https://img.shields.io/badge/desktop-ai-companion-Repo-00CC66?style=for-the-badge&logo=github&logoColor=black)](https://github.com/VarshuAi/desktop-ai-companion)
+
+<br/>
+
+</div>
